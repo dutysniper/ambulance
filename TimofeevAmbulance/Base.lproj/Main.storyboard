@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TimofeevAmbulance" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="04b-Os-wfa">
+                                <rect key="frame" x="98" y="274" width="227" height="202"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7EF-1U-gLy">
+                                        <rect key="frame" x="0.0" y="0.0" width="227" height="202"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Говорил, что устал работать?" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1lW-j6-YHR">
+                                                <rect key="frame" x="0.0" y="0.0" width="227" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Имеет грустный вид?" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZeL-L6-V44">
+                                                <rect key="frame" x="0.0" y="42" width="227" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Болел за последний месяц?" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fcA-jx-h6q">
+                                                <rect key="frame" x="0.0" y="84" width="227" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ругался с начальником?" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m64-E7-Xik">
+                                                <rect key="frame" x="0.0" y="126" width="227" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Луна в созвездии Льва?" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eaU-t6-hcF">
+                                                <rect key="frame" x="0.0" y="168" width="227" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="227" id="5pF-9d-wIB"/>
+                                            <constraint firstAttribute="height" constant="202" id="yRu-3U-TjF"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXt-GN-umM">
+                                <rect key="frame" x="145.33333333333331" y="509.66666666666669" width="137.33333333333331" height="21.333333333333314"/>
+                                <color key="tintColor" systemColor="tintColor"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Узнать результат" cornerStyle="capsule">
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.98431372640000003" green="0.98431372640000003" blue="0.49019610879999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pp2-Ox-VQG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите исходные данные" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbM-hs-vff">
+                                <rect key="frame" x="70.666666666666686" y="202" width="287" height="29.666666666666657"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
+                                <color key="textColor" red="0.98431372640000003" green="0.98431372640000003" blue="0.49019610879999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gd2-mU-MSQ">
+                                <rect key="frame" x="100.66666666666669" y="552" width="227" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="VQS-aJ-rlf"/>
+                                    <constraint firstAttribute="width" constant="227" id="fPw-J2-31S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="250_FSO_Emblem" translatesAutoresizingMaskIntoConstraints="NO" id="0Ey-Yl-2D1">
+                                <rect key="frame" x="256" y="738" width="152" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="154" id="dVs-wW-4zb"/>
+                                    <constraint firstAttribute="width" constant="152" id="xUs-Ej-DxC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вероятность больничного Тимофеева" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pi3-mP-5JV">
+                                <rect key="frame" x="20" y="60" width="388" height="109"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="36"/>
+                                <color key="textColor" red="0.98431372640000003" green="0.98431372640000003" blue="0.49019610879999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="labelColor"/>
+                                <size key="shadowOffset" width="2" height="-1"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.22745099660000001" green="0.29803922770000002" blue="0.47450977560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.22745099660000001" green="0.29803922770000002" blue="0.47450977560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="IbM-hs-vff" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2gn-3B-5Av"/>
+                            <constraint firstItem="Pi3-mP-5JV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="2zL-im-arq"/>
+                            <constraint firstItem="xXt-GN-umM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5By-58-NIA"/>
+                            <constraint firstItem="7EF-1U-gLy" firstAttribute="top" secondItem="IbM-hs-vff" secondAttribute="bottom" constant="42" id="CY2-Is-eN7"/>
+                            <constraint firstItem="7EF-1U-gLy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Yod-rX-O4f"/>
+                            <constraint firstItem="0Ey-Yl-2D1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dFi-as-DZW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pi3-mP-5JV" secondAttribute="trailing" constant="20" id="ehh-aa-aky"/>
+                            <constraint firstItem="IbM-hs-vff" firstAttribute="top" secondItem="Pi3-mP-5JV" secondAttribute="bottom" constant="33" id="hn2-VN-MAs"/>
+                            <constraint firstItem="xXt-GN-umM" firstAttribute="top" secondItem="7EF-1U-gLy" secondAttribute="bottom" constant="34" id="iMP-T5-2kV"/>
+                            <constraint firstItem="Gd2-mU-MSQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mC8-uR-T8A"/>
+                            <constraint firstItem="Pi3-mP-5JV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="q0C-W7-hBR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Ey-Yl-2D1" secondAttribute="trailing" constant="20" id="utV-5O-ug7"/>
+                            <constraint firstItem="Gd2-mU-MSQ" firstAttribute="top" secondItem="xXt-GN-umM" secondAttribute="bottom" constant="21" id="vKc-nh-2Oa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="quest1" destination="1lW-j6-YHR" id="8Pz-n7-bRR"/>
+                        <outlet property="quest2" destination="ZeL-L6-V44" id="dje-js-PtR"/>
+                        <outlet property="quest3" destination="fcA-jx-h6q" id="aGe-RG-43S"/>
+                        <outlet property="quest4" destination="m64-E7-Xik" id="txJ-H9-fc9"/>
+                        <outlet property="quest5" destination="eaU-t6-hcF" id="9CI-rT-oYR"/>
+                        <outlet property="result" destination="Gd2-mU-MSQ" id="bFX-Ce-G9N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="82.366071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="250_FSO_Emblem" width="192" height="230"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
